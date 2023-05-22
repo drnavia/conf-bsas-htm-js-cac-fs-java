@@ -1,0 +1,113 @@
+* {
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif;   
+    margin: 0;
+    padding: 0;
+}
+
+.texto-small {
+    font-size: small;
+}
+
+.texto-xsmall {
+    font-size: x-small;
+}
+
+
+.boton-cac {
+    color: white !important;
+    background-color: #96c93e !important
+}
+
+/********** HEADER **********/
+/* NAVBAR */
+.nav-item:hover {
+    color: white !important;
+}
+
+/********** MAIN **********/
+/* CAROUSEL */
+.carousel-item>img {
+    height: 91vh;
+    object-fit: cover;
+}
+
+.background-carousel {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.content-carousel {
+    align-items: end;
+    justify-content: end;
+    margin-top: 50vh;
+    width: auto;
+}
+
+.content-carousel>div {
+    width: 70%;
+}
+
+/* CARDS */
+.card-text {
+    font-size: .9rem;
+}
+
+.card-text-s {
+    font-size: .7rem;
+}
+
+/* FORMULARIO */
+.tickets {
+    width: 75%;
+}
+
+.formulario {
+    width: 75%;
+}
+
+/********** FOOTER **********/
+/* FOOTER */
+
+footer {
+    background: linear-gradient(to right, #1d3947, #1e5372);
+    height: 15vh;
+}
+
+/********** MEDIA QUERY **********/
+@media (max-width: 450px) {
+    /* CAROUSEL */
+    .content-carousel>div {
+        bottom: 10rem;
+        font-size: smaller;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80vw;
+    }
+
+    /* BANNER */
+    .card-text {
+        font-size: .7rem;
+    }
+
+    .banner-img {
+        background-attachment: revert;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    /* FORMULARIO */
+    .formulario {
+        width: auto;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: .8rem;
+        height: 15vh;
+    }
+}
