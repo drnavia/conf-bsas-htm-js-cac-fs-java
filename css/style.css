@@ -28,7 +28,7 @@
 /********** MAIN **********/
 /* CAROUSEL */
 .carousel-item>img {
-    height: 91vh;
+    height: 90vh;
     object-fit: cover;
 }
 
@@ -85,6 +85,10 @@ footer {
         right: 0;
         margin: auto;
         width: 80vw;
+    }
+
+    .content-carousel {
+        margin-top: 40vh;
     }
 
     /* BANNER */
