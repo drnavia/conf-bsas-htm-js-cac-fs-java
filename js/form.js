@@ -1,9 +1,10 @@
 /*========== FORMULARIO - DOM ==========*/
 const formulario = document.getElementById('formulario')
-const inputsTag = formulario.getElementsByTagName('input')
+const inputs = formulario.getElementsByTagName('input')
 const tickets = document.getElementById('tickets');
-const selectTag = formulario.getElementsByTagName('select')
-const totalTag = document.getElementById('total')
+const select = document.getElementById('category')
+console.log(select);
+const toPay = document.getElementById('total')
 const resetBtn = document.getElementById('reset')
 const submitBtn = document.getElementById('submit')
 
@@ -22,7 +23,7 @@ function totalPrice () {
   if (!ticket || !category) return;
 
   total = (price * ticket / 100) * categories[category].percent
-  totalTag.innerText = total
+  toPay.innerText = total
 }
 
 
@@ -30,8 +31,8 @@ function totalPrice () {
 function resetCategorySelected () {
   total = null
   selected = null
-  totalTag.innerText = ''
-  selectTag.value = 'none'
+  toPay.innerText = ''
+  select.value = 'none'
 }
 
 function setCategory (event) { // Se ejecuta al realizar la selección
@@ -68,10 +69,10 @@ function setTicket (event) {
 function resetForm (event) {
   event.preventDefault()
 
-  for (let input of inputsTag)
+  for (let input of inputs)
     input.value = ''
 
-  selectTag.value = 'none'
+  select.value = 'none'
 
   resetCategorySelected()
 }
