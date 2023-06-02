@@ -6,4 +6,4 @@
 ![version](https://img.shields.io/badge/javascript-v12-f7df1e.svg)<br>
 
 ## TP Integrador JavaScript - Fullstack Java (c23052)
-Este proyecto corresponde a la **segunda entrega del frontend**, aplicando HTML, CSS, Bootstrap y JavaScript.
+Este proyecto corresponde a la **2da entrega del frontend**, aplicando HTML, CSS, Bootstrap y JavaScript.
