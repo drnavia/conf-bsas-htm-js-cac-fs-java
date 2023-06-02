@@ -3,7 +3,6 @@ const formulario = document.getElementById('formulario')
 const inputs = formulario.getElementsByTagName('input')
 const tickets = document.getElementById('tickets');
 const select = document.getElementById('category')
-console.log(select);
 const toPay = document.getElementById('total')
 const resetBtn = document.getElementById('reset')
 const submitBtn = document.getElementById('submit')
