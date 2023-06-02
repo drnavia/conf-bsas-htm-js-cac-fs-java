@@ -94,7 +94,7 @@ function submitForm (event) {
 
   submitOk
     ?
-    location.href = '/success.html' :
+    location.href = './success.html' :
     Swal.fire({
       title: 'Oops...',
       text: 'Debes completar todos los campos correctamente',
